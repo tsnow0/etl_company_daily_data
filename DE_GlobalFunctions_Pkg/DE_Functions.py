@@ -54,7 +54,7 @@ def execute(process):
 # create tuple of all processes
 def dailyrun():
     # path of daily scripts
-    mypath = r'C:\Users\tori.snow\Documents\Python\Downeast Dailys'
+    mypath = r'C:\Users\tori.snow\Documents\Python\Company Dailys'
     os.chdir(mypath)
 
     # tuple of script files to run
