@@ -5,7 +5,7 @@ import DE_GlobalFunctions_Pkg.db as db
 from DE_GlobalFunctions_Pkg.DE_Functions import merge_data
 
 def read_sql(query):
-    #read function for pulling data from STORIS
+    #read function for pulling data from RetailCompanyDW
 
     rcursor = db.storis_read_conn.cursor()
     rcursor.execute(query)
@@ -54,7 +54,7 @@ def chunker(seq, size):
 
 ########################################################################################
 def write_sql(values):
-    #write function for writing data to Downeast_analytics
+    #write function for writing data to new db table
 
     numchunk = 0
     for chunk in chunker(values, 50000):
@@ -74,7 +74,7 @@ def write_sql(values):
 ########################################################################################
 if __name__ == "__main__":
 
-    # select statement for STORIS
+    # select statement from company's db
     read_query = """
                 SELECT ii.OrderID as 'oorder_id',
                        ii.ItemID as 'oorder_line_id',
@@ -102,11 +102,11 @@ if __name__ == "__main__":
                        ii.TotShipWeight as 'oinvoiceitem_ship_weight',
                        ii.StoreID as 'ostore_id',
                        ii.VendorID as 'ovendor_id'
-                FROM DowneastDW.storis.InvoiceItem ii
+                FROM RetailCompanyDW.storis.InvoiceItem ii
                 WHERE YEAR(ii.DateCreated) >= 2023
                 """
 
-    # insert statement for downeast_analytics
+    # insert statement for new db tables
     insert_query = """
                     INSERT INTO oInvoiceItems (oorder_id, 
                                     oorder_line_id,

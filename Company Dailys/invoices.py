@@ -71,7 +71,7 @@ if __name__ == '__main__':
                 i.TotSpecOrderAmt,
                 i.VoidedDate,
                 i.VoidedOrderReasonCodeID
-                FROM DowneastDW.storis.Invoice i
+                FROM RetailCompanyDW.storis.Invoice i
                 WHERE YEAR(i.DateCreated) >= 2023
                 """
 

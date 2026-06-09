@@ -46,7 +46,7 @@ if __name__ == "__main__":
                 SELECT 
                     b.BrandID as obrand_id,
                     b.Name as obrand_name
-                FROM DowneastDW.storis.Brand b
+                FROM RetailCompanyDW.storis.Brand b
                 WHERE b.BrandID NOT IN ('<COGID>','<No Value>')
                 """
 

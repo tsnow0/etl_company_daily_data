@@ -43,7 +43,7 @@ if __name__ == "__main__":
                     c.Description as ocategory_name,
                     c.InvType as ocategory_inv_type,
                     c.IsActive as ocategory_is_active
-               FROM DowneastDW.storis.Category c
+               FROM RetailCompanyDW.storis.Category c
                """
 
     insert_query = """
