@@ -1,17 +1,15 @@
 
-de_db = 'DowneastDW'
-de_user = 'TSnow'
-de_password = '99om^Z83OfYZU4!Pa@WQ'
-de_server = '209.235.243.93'
+dw_db = 'RetailCompanyDW'
+dw_user = 'example_user'
+dw_password = 'example_password'
+dw_server = 'example_storis_host'
 
-db_da = 'downeast_analytics'
-db_hq = 'hq'
-db_analytics = 'analytics'
+new_db_name = 'new_db'
 
-m_user = 'toris'
-m_password = 'f95^v9VHIFZ%hKgyemBEA'
-m_report = 'hq.cluster-ro-cxi4fy8q3jyy.us-west-2.rds.amazonaws.com'
-m_prod = 'hq.cluster-cxi4fy8q3jyy.us-west-2.rds.amazonaws.com'
-m_dev = 'staging.cxi4fy8q3jyy.us-west-2.rds.amazonaws.com'
+new_db_user = 'example_user'
+new_db_password = 'exmaple_password'
+new_db_read = 'example_aws_read_host'
+new_db_prod = 'example_aws_prod_host'
+new_db_dev = 'example_aws_dev_host'
 
 
