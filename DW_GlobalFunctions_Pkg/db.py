@@ -1,4 +1,4 @@
-import DE_GlobalFunctions_Pkg.creds as c
+import DW_GlobalFunctions_Pkg.creds as c
 import pymysql as py
 import pyodbc
 

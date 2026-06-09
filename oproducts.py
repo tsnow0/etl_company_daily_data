@@ -1,8 +1,8 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-import DE_GlobalFunctions_Pkg.db as db
-from DE_GlobalFunctions_Pkg.DE_Functions import add_first_sale_date
+import DW_GlobalFunctions_Pkg.db as db
+from DW_GlobalFunctions_Pkg.DW_Functions import add_first_sale_date
 
 
 def read_sql(query):

@@ -1,5 +1,5 @@
 import sys
-from DE_GlobalFunctions_Pkg.DE_Functions import dailyrun
+from DW_GlobalFunctions_Pkg.DW_Functions import dailyrun
 import time
 from pathlib import Path
 

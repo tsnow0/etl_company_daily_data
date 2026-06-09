@@ -1,7 +1,7 @@
 import pickle
 import sys
 
-import DE_GlobalFunctions_Pkg.db as db
+import DW_GlobalFunctions_Pkg.db as db
 from pathlib import Path
 import subprocess
 
